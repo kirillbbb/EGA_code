@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import List, Sequence
+from typing import Sequence
 
 
 @dataclass(frozen=True)
@@ -51,3 +51,4 @@ class GAConfig:
     tournament_k: int = 3
     mutation_prob: float = 0.2
     random_seed: int | None = None
+    pairing_mode: str = "random"
